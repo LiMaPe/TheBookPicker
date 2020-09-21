@@ -1,0 +1,232 @@
+/* CSS reset for universal default browser-style uniformity */
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+/* My base  */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(/images/bookstrings.jpg);
+    background-color: #314f53; 
+    height: 800px; 
+    background-position: center bottom; 
+    background-repeat: repeat-y; 
+    background-size: cover; 
+    font-size: 1.6rem;
+    font-family: "Amatic SC", Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+
+.header {
+    background: #407076;
+    border-bottom: .8rem solid #568a91;
+    color: white; 
+    font-weight: bolder;
+    margin-bottom: 4.8rem;
+    opacity: 0.95;
+    padding: 1rem 0;
+}
+
+.header__title {
+    font-size: 5.5rem;
+    margin: 0;
+}
+
+.header__subtitle {
+    font-size: 3rem;
+    margin: 0;
+    color: #C9C5BA;
+    font-weight: 500;
+}
+
+.header__container {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+/* Container to centralize content */
+
+.container {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+/* Big button */
+
+.big-button {
+    background: #EBBAB9;
+    border: none;
+    border-bottom: .6rem solid #aa8685;
+    color: white;
+    font-weight: bold;
+    font-size: 4.0rem;
+    width: 100%;
+    margin-bottom: 4.8rem;
+    padding: 1.20rem;
+    cursor: pointer;
+}
+
+.big-button:disabled {
+    opacity: .93;
+    cursor: not-allowed;
+}
+
+/* Regular buttons */
+
+.button {
+    background: #EBBAB9;
+    border: none;
+    border-bottom: .3rem solid #aa8685;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 500;
+    padding: 1.2rem;
+    cursor: pointer;
+}
+
+.button--link {
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: #C9C5BA;
+    padding: 0;
+}
+
+/* Widget */
+
+.widget-header {
+    background: #698996;
+    color: #C9C5BA;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem;
+}
+
+.widget-header__title {
+    margin: 0;
+}
+
+.widget-body {
+    background: #97B1A6;
+    font-size: 2.4rem;
+    font-weight: bolder;
+    margin-bottom: 4.8rem;
+}
+
+.widget__selector {
+    color: white;
+    margin: 0;
+    padding: 3.2rem;
+    text-align: center;
+    border-bottom: 1px solid  #b3c9c0;
+}
+
+/* Individual Options and error msg */
+
+.option {
+    border-bottom: 1px solid #b3c9c0;
+    display: flex;
+    justify-content: space-between;
+    padding: 3.2rem 1.6rem;
+}
+
+.option__text {
+    color: white;
+    font-weight: 500;
+    font-size: 2.6rem;
+    margin: 0;
+    word-break: break-all;
+}
+
+.add-option-error {
+    color: #c2d3cc;
+    font-size: 2.6rem;
+    margin: 3.2rem 0 0 0;
+    padding: 0 3.2rem;
+}
+
+.add-option {
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem;
+}
+
+.add-option__input {
+    background: #b3c9c0;
+    border: none;
+    border-bottom: .3rem solid #8b9c95;
+    color: white;
+    font-size: 2.0rem;
+    flex-grow: 1;
+    margin: 0 0 1.2rem 0;
+    padding: 1.2rem;
+}
+
+/* Modal component */
+
+.ReactModalPortal>div {
+    opacity: 0;
+} 
+
+.ReactModalPortal .ReactModal__Overlay {
+    transition: opacity 400ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+} 
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+} 
+
+.modal {
+    background: #464b5e;
+    color: white;
+    max-width: 50rem;
+    outline: none;
+    padding: 3.2rem;
+    text-align: center;
+}
+
+.modal__title {
+    font-size: 3.2rem;
+    margin: 0 0 1.6rem 0;
+}
+
+.modal__body {
+    font-size: 4.8rem;
+    font-weight: 300;
+    margin: 0 0 1.6rem 0;
+    word-break: break-all;
+}
+
+/* Mobile specific styles, where 45rem is the desktop breakpoint */
+
+@media (min-with: 45rem) {
+    .add-option {
+        flex-direction: row;
+    }
+
+    .add-option__input {
+        margin: 0 1.2rem 0 0;
+    }
+}
