@@ -18,14 +18,9 @@ html {
 }
 
 body {
-    background-image: url(/images/bookstrings.jpg);
     background-color: #314f53; 
-    height: 800px; 
-    background-position: center bottom; 
-    background-repeat: repeat-y; 
-    background-size: cover; 
     font-size: 1.6rem;
-    font-family: "Amatic SC", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 /* Header */
@@ -42,13 +37,12 @@ body {
 
 .header__title {
     font-size: 5.5rem;
-    margin: 0;
 }
 
 .header__subtitle {
     font-size: 3rem;
-    margin: 0;
-    color: #C9C5BA;
+    margin: 0 0 0.5rem 0.7rem;
+    color: #f1ede1;
     font-weight: 500;
 }
 
@@ -61,7 +55,7 @@ body {
 /* Container to centralize content */
 
 .container {
-    max-width: 68rem;
+    max-width: 80rem;
     margin: 0 auto;
     padding: 0 3.2rem;
 }
@@ -69,7 +63,7 @@ body {
 /* Big button */
 
 .big-button {
-    background: #EBBAB9;
+    background:#ddb0ae;
     border: none;
     border-bottom: .6rem solid #aa8685;
     color: white;
@@ -89,7 +83,7 @@ body {
 /* Regular buttons */
 
 .button {
-    background: #EBBAB9;
+    background: #ddb0ae;
     border: none;
     border-bottom: .3rem solid #aa8685;
     color: white;
@@ -103,7 +97,7 @@ body {
     background: none;
     border: none;
     font-weight: bold;
-    color: #C9C5BA;
+    color: #f1ede1;
     padding: 0;
 }
 
@@ -111,14 +105,14 @@ body {
 
 .widget-header {
     background: #698996;
-    color: #C9C5BA;
+    color: #f1ede1;
     display: flex;
     justify-content: space-between;
     padding: 1.6rem;
 }
 
 .widget-header__title {
-    margin: 0;
+    
 }
 
 .widget-body {
@@ -230,3 +224,29 @@ body {
         margin: 0 1.2rem 0 0;
     }
 }
+
+@media only screen and (max-width: 480px)  {
+    
+    .button {
+        font-size: 1.6rem; 
+        font-weight: 400;
+    }
+
+    .header__title {
+        font-size: 3.8rem;
+    }
+
+    .header__subtitle {
+        font-size: 2.5rem;
+        margin-left: 0.4rem;
+    }
+
+    .option__text {
+        font-size: 2rem;
+    }
+
+    .widget-header__title {
+     font-size: 2rem;
+    }
+}
+
